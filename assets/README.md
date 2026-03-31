@@ -17,4 +17,4 @@ Application moderne de gestion de tâches avec :
 - Protection XSS
 
 ## Démo
-(lien ici)
+https://oslk-fs.github.io/todo-app/
