@@ -16,13 +16,17 @@
         </header>
         <div class="input-group">
             <input type="text" id="taskInput" placeholder="Add a task...">
-            <button id="addBtn">ADD</button>
+            <button id="addBtn">Add +</button>
         </div>
-        <div class="filtres">
-            <button data-filter="all" class="active">All</button>
-            <button data-filter="active">Active</button>
-            <button data-filter="completed">Completed</button>
+        <div class="controls">
+            <div class="filtres">
+                <button data-filter="all" title="all tasks">All</button>
+                <button data-filter="active" title="active tasks">Active</button>
+                <button data-filter="completed" title="tasks completed">Completed</button>
+            </div>
+            <button id="clearBtn" title="clear all tasks">Clear</button>
         </div>
+        <div class="controls-task"></div>
         <ul id="taskList"></ul>
     </main>
     <script src="app.js"></script>
