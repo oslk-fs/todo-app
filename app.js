@@ -170,7 +170,7 @@
     //update task 
     function updateTask(taskId, newText) {
         const task = tasks.find(t => t.id === taskId);
-        if (task) {
+        if (task && (newText !== "" || newText !== undefined || newText !== null)) {
             task.text = newText;
             saveToLocalStorage();
             renderAllTask();
