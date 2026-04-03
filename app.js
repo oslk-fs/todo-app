@@ -144,6 +144,7 @@
         });
 
         li.append(spanDrag, inputCheck, span, editBtn, delBtn);
+
         list.appendChild(li);
     }
 
@@ -161,6 +162,7 @@
         tasks.push(newTask);
         renderTask(newTask);
         saveToLocalStorage();
+        renderAllTask();
 
         input.value = "";
     }
@@ -174,7 +176,6 @@
             renderAllTask();
         }
     }
-
 
 
     // Initialisation : Afficher les tâches stockées

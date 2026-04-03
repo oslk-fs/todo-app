@@ -410,7 +410,7 @@ li.completed::before {
   }
 
   .filtres {
-    gap: 5px;
+    gap: 30px;
   }
 
   .filtres button {
@@ -428,7 +428,7 @@ li.completed::before {
 
 
   li span {
-    width: calc(100% - 0px);
+    width: calc(100% - 100px);
     margin-left: 10px;
     margin-right: 50px;
     border: none !important;
@@ -439,16 +439,32 @@ li.completed::before {
     outline: 1px solid var(--primary-color);
   }
 
+  li input[type="checkbox"] {
+    margin-left: 20px;
+  }
+
+  .editBtn {
+    display: none;
+  }
 
   .drag-handle {
-    position: absolute;
-    left: -5px;
-    top: -10px;
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
-    background-color: red;
+    z-index: 2 !important;
+    position: absolute;
+    left: -5px;
+    top: 25px;
+  }
+
+  .drag-handle img {
+    transform: rotate(90deg);
+  }
+
+  .drag-handle:hover {
+    cursor: grab;
   }
 
 }
