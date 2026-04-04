@@ -281,6 +281,8 @@ li span {
   text-align: left;
   z-index: 1;
   user-select: none;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 li::before {
@@ -456,11 +458,11 @@ li.completed::before {
     z-index: 2 !important;
     position: absolute;
     left: -5px;
-    top: 25px;
+    top: -5px;
   }
 
   .drag-handle img {
-    transform: rotate(90deg);
+    transform: rotate(140deg);
   }
 
   .drag-handle:hover {
